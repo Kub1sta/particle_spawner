@@ -5,11 +5,9 @@ local particle_data = {}
 RegisterCommand("startfx", function()
     CreateThread(function()
 
-        local playerPed = PlayerPedId()
-        local playerCoords = nil
-        local distance = nil
-        while true do
-            Wait(500)
+            local playerPed = PlayerPedId()
+            local playerCoords = nil
+            local distance = nil
             playerCoords = GetEntityCoords(playerPed)
             if not enable then
                 enable = true
@@ -33,7 +31,6 @@ RegisterCommand("startfx", function()
                 end
                 return
             end
-        end
     end)
 
 end)
