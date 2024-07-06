@@ -41,6 +41,7 @@ CreateThread(function()
             end
         end)
     else
+        
         local particles = {}
         
         CreateThread(function()
@@ -73,6 +74,7 @@ CreateThread(function()
                 Wait(100)
             end
             UseParticleFxAsset(dict)
+            RemoveNamedPtfxAsset(dict)
         end
         
     end    
